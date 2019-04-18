@@ -1,0 +1,32 @@
+# Created by https://www.gitignore.io/api/visualstudiocode
+# Edit at https://www.gitignore.io/?templates=visualstudiocode
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+
+# Ignore Mac system files
+.DS_store
+
+# Ignore node_modules folder
+node_modules/
+
+# Ignore all text files
+*.txt
+
+# Ignore files related to API keys
+.env
+
+# Ignore SASS config files
+*.sass-cache
+*.scss
+*.css.map
+
+# End of https://www.gitignore.io/api/visualstudiocode

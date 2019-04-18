@@ -1,0 +1,75 @@
+body {
+  background-color: #161616;
+  color: gainsboro;
+  font-family: 'Gabriola', cursive, sans-serif;
+  text-shadow: 1px 1px 5px #bbbaba;
+  letter-spacing: 0.1em;
+  text-align: center;
+  margin: 0;
+}
+
+header {
+  margin: 10px;
+  font-size: 1.3rem;
+  color: goldenrod;
+}
+
+#board {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row-wrap;
+          flex-flow: row-wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#password {
+  font-size: 2em;
+}
+
+#picture {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  border: 1px solid white;
+  margin-right: 2rem;
+  width: auto;
+  height: auto;
+}
+
+img {
+  min-width: 35vw;
+  height: auto;
+}
+
+#keyboard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid white;
+  width: 35vw;
+}
+
+button {
+  margin: 10px;
+}
+
+#password > input {
+  text-align: center;
+  font-size: 2vh;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#password > .buttons {
+  padding: 5px 10px 5px 10px;
+}
+/*# sourceMappingURL=style.css.map */
