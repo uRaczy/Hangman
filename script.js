@@ -86,8 +86,6 @@ const chosenLetter = (key) => {
         $('#picture > img').attr('src', `./img/s${+counter}.jpg`);
         counter++;
 
-        console.log(this);
-
         $(`#keyboard > input[value=${key}]`).css({'color': 'red'});
 
         if (counter > 8)
@@ -113,6 +111,7 @@ const chosenLetter = (key) => {
         for (i = 0; i < index.length; i++) {
             hiddenPassword = hiddenPassword.substr(0, index[i]) + letters[i] + hiddenPassword.substr(index[i] + 1, hiddenPassword.length);
         }
+
         $(`#keyboard > input[value=${key}]`).css({'color': 'green'});
         // Update password with each revealed letter
         $('#password > h1').text(hiddenPassword);
