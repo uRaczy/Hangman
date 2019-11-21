@@ -36,7 +36,7 @@ const passwordSet = () => {
                     match = true;
                 }
             }
-
+            
             if (match == false) {
                 alert("Only polish letters allowed");
                 location.reload();
@@ -80,12 +80,17 @@ const chosenLetter = (key) => {
             index.push(i);
         }
     }
-    // If there's no matches, puts new screen
+    // If there's no matches, puts new screen of hanged man
     if (index.length == 0)
     {
         $('#picture > img').attr('src', `./img/s${+counter}.jpg`);
         counter++;
-        if (counter > 9)
+
+        console.log(this);
+
+        $(`#keyboard > input[value=${key}]`).css({'color': 'red'});
+
+        if (counter > 8)
         {
             $('#password > h1').text("Game Over");
             $('#keyboard').hide();
@@ -108,7 +113,7 @@ const chosenLetter = (key) => {
         for (i = 0; i < index.length; i++) {
             hiddenPassword = hiddenPassword.substr(0, index[i]) + letters[i] + hiddenPassword.substr(index[i] + 1, hiddenPassword.length);
         }
-        
+        $(`#keyboard > input[value=${key}]`).css({'color': 'green'});
         // Update password with each revealed letter
         $('#password > h1').text(hiddenPassword);
 
