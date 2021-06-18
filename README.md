@@ -1,4 +1,4 @@
-# The-Hanged-Man
+# Hangman
 
 This is a simple application based on plain html, css and javscript with some flavour of jquery.
 
